@@ -1,0 +1,11 @@
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h:371:22:LL_I2C_Enable	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h:393:26:LL_I2C_IsEnabled	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h:1236:26:LL_I2C_IsActiveFlag_TXE	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h:1262:26:LL_I2C_IsActiveFlag_RXNE	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h:1288:26:LL_I2C_IsActiveFlag_ADDR	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h:1314:26:LL_I2C_IsActiveFlag_AF	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h:1835:25:LL_I2C_ReceiveData8	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h:1847:22:LL_I2C_TransmitData8	16	static
+../Drivers/IMU/Src/IMU_I2C.c:6:6:IMU_I2C_Init	16	static
+../Drivers/IMU/Src/IMU_I2C.c:10:6:I2C_Read_Reg	152	static
+../Drivers/IMU/Src/IMU_I2C.c:140:6:I2C_Write_Reg	136	static
