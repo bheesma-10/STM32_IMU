@@ -1,0 +1,104 @@
+\hypertarget{IMU__I2C_8c}{}\doxysection{Drivers/\+IMU/\+Src/\+IMU\+\_\+\+I2C.c File Reference}
+\label{IMU__I2C_8c}\index{Drivers/IMU/Src/IMU\_I2C.c@{Drivers/IMU/Src/IMU\_I2C.c}}
+
+
+source file for I2C operation handling  
+
+
+{\ttfamily \#include \char`\"{}IMU\+\_\+\+I2\+C.\+h\char`\"{}}\newline
+Include dependency graph for IMU\+\_\+\+I2\+C.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{IMU__I2C_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{IMU__I2C_8c_ad1ffbcada0fc81acf8ea7f67a5a4420d}\label{IMU__I2C_8c_ad1ffbcada0fc81acf8ea7f67a5a4420d}} 
+\#define {\bfseries I2\+C\+\_\+\+USED}~I2\+C1
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{IMU__I2C_8c_a450960f890ea77eec101f949d4987664}{IMU\+\_\+\+I2\+C\+\_\+\+Init}} (\mbox{\hyperlink{structI2CHandle__t}{I2\+CHandle\+\_\+t}} $\ast$hi2c)
+\begin{DoxyCompactList}\small\item\em initialize i2c instance \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{IMU__I2C_8c_a323bd5fa768071d90b453b3e600b4cb9}{I2\+C\+\_\+\+Read\+\_\+\+Reg}} (\mbox{\hyperlink{structI2CHandle__t}{I2\+CHandle\+\_\+t}} $\ast$hi2c, uint8\+\_\+t reg, uint8\+\_\+t $\ast$reg\+\_\+data, uint16\+\_\+t count, uint16\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em read registers over I2C protocol \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{IMU__I2C_8c_a06a9fed82458a6e938257f587752959f}{I2\+C\+\_\+\+Write\+\_\+\+Reg}} (\mbox{\hyperlink{structI2CHandle__t}{I2\+CHandle\+\_\+t}} $\ast$hi2c, uint8\+\_\+t reg, uint8\+\_\+t $\ast$reg\+\_\+data, uint16\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em write registers over I2C protocol \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{IMU__I2C_8c_a88ffdbd6c19b09743dfdf1a79406275e}\label{IMU__I2C_8c_a88ffdbd6c19b09743dfdf1a79406275e}} 
+uint64\+\_\+t {\bfseries counter\+\_\+millis}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+source file for I2C operation handling 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{IMU__I2C_8c_a323bd5fa768071d90b453b3e600b4cb9}\label{IMU__I2C_8c_a323bd5fa768071d90b453b3e600b4cb9}} 
+\index{IMU\_I2C.c@{IMU\_I2C.c}!I2C\_Read\_Reg@{I2C\_Read\_Reg}}
+\index{I2C\_Read\_Reg@{I2C\_Read\_Reg}!IMU\_I2C.c@{IMU\_I2C.c}}
+\doxysubsubsection{\texorpdfstring{I2C\_Read\_Reg()}{I2C\_Read\_Reg()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Read\+\_\+\+Reg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structI2CHandle__t}{I2\+CHandle\+\_\+t}} $\ast$}]{hi2c,  }\item[{uint8\+\_\+t}]{reg,  }\item[{uint8\+\_\+t $\ast$}]{reg\+\_\+data,  }\item[{uint16\+\_\+t}]{count,  }\item[{uint16\+\_\+t}]{timeout }\end{DoxyParamCaption})}
+
+
+
+read registers over I2C protocol 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hi2c} & pointer to I2C structure \\
+\hline
+{\em reg} & register to read from \\
+\hline
+{\em reg\+\_\+data} & data buffer to store read data \\
+\hline
+{\em count} & number of bytes to be read \\
+\hline
+{\em timeout} & time in ms to timeout if communication stopped \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{IMU__I2C_8c_a06a9fed82458a6e938257f587752959f}\label{IMU__I2C_8c_a06a9fed82458a6e938257f587752959f}} 
+\index{IMU\_I2C.c@{IMU\_I2C.c}!I2C\_Write\_Reg@{I2C\_Write\_Reg}}
+\index{I2C\_Write\_Reg@{I2C\_Write\_Reg}!IMU\_I2C.c@{IMU\_I2C.c}}
+\doxysubsubsection{\texorpdfstring{I2C\_Write\_Reg()}{I2C\_Write\_Reg()}}
+{\footnotesize\ttfamily void I2\+C\+\_\+\+Write\+\_\+\+Reg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structI2CHandle__t}{I2\+CHandle\+\_\+t}} $\ast$}]{hi2c,  }\item[{uint8\+\_\+t}]{reg,  }\item[{uint8\+\_\+t $\ast$}]{reg\+\_\+data,  }\item[{uint16\+\_\+t}]{timeout }\end{DoxyParamCaption})}
+
+
+
+write registers over I2C protocol 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hi2c} & pointer to I2C structure \\
+\hline
+{\em reg} & register to write to \\
+\hline
+{\em reg\+\_\+data} & data buffer to store data to be written \\
+\hline
+{\em timeout} & time in ms to timeout if communication stopped \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{IMU__I2C_8c_a450960f890ea77eec101f949d4987664}\label{IMU__I2C_8c_a450960f890ea77eec101f949d4987664}} 
+\index{IMU\_I2C.c@{IMU\_I2C.c}!IMU\_I2C\_Init@{IMU\_I2C\_Init}}
+\index{IMU\_I2C\_Init@{IMU\_I2C\_Init}!IMU\_I2C.c@{IMU\_I2C.c}}
+\doxysubsubsection{\texorpdfstring{IMU\_I2C\_Init()}{IMU\_I2C\_Init()}}
+{\footnotesize\ttfamily void IMU\+\_\+\+I2\+C\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structI2CHandle__t}{I2\+CHandle\+\_\+t}} $\ast$}]{hi2c }\end{DoxyParamCaption})}
+
+
+
+initialize i2c instance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hi2c} & pointer to I2C structure \\
+\hline
+\end{DoxyParams}

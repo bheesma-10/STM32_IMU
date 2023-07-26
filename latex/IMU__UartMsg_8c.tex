@@ -1,0 +1,79 @@
+\hypertarget{IMU__UartMsg_8c}{}\doxysection{Drivers/\+IMU/\+Src/\+IMU\+\_\+\+Uart\+Msg.c File Reference}
+\label{IMU__UartMsg_8c}\index{Drivers/IMU/Src/IMU\_UartMsg.c@{Drivers/IMU/Src/IMU\_UartMsg.c}}
+
+
+source file for Uart operations handling  
+
+
+{\ttfamily \#include \char`\"{}IMU\+\_\+\+Uart\+Msg.\+h\char`\"{}}\newline
+Include dependency graph for IMU\+\_\+\+Uart\+Msg.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{IMU__UartMsg_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{IMU__UartMsg_8c_a781587f9e33af1d920571f459c0f3dc0}\label{IMU__UartMsg_8c_a781587f9e33af1d920571f459c0f3dc0}} 
+\#define {\bfseries UART\+\_\+\+USED}~USART3
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{IMU__UartMsg_8c_a4e398c39b9c7044e9765930d8b3def10}{IMU\+\_\+\+Uart\+\_\+\+Init}} (\mbox{\hyperlink{structUartHandle__t}{Uart\+Handle\+\_\+t}} $\ast$huart)
+\begin{DoxyCompactList}\small\item\em initialize uart instance \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{IMU__UartMsg_8c_ad07072519882e9712fcdb0d42e50a332}{Uart\+\_\+\+Transmit\+Data}} (\mbox{\hyperlink{structUartHandle__t}{Uart\+Handle\+\_\+t}} $\ast$huart, uint8\+\_\+t $\ast$p\+Txdata, uint16\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em read registers over Uart protocol \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+source file for Uart operations handling 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{IMU__UartMsg_8c_a4e398c39b9c7044e9765930d8b3def10}\label{IMU__UartMsg_8c_a4e398c39b9c7044e9765930d8b3def10}} 
+\index{IMU\_UartMsg.c@{IMU\_UartMsg.c}!IMU\_Uart\_Init@{IMU\_Uart\_Init}}
+\index{IMU\_Uart\_Init@{IMU\_Uart\_Init}!IMU\_UartMsg.c@{IMU\_UartMsg.c}}
+\doxysubsubsection{\texorpdfstring{IMU\_Uart\_Init()}{IMU\_Uart\_Init()}}
+{\footnotesize\ttfamily void IMU\+\_\+\+Uart\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUartHandle__t}{Uart\+Handle\+\_\+t}} $\ast$}]{huart }\end{DoxyParamCaption})}
+
+
+
+initialize uart instance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em huart} & pointer to Uart structure \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{IMU__UartMsg_8c_a4e398c39b9c7044e9765930d8b3def10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{IMU__UartMsg_8c_ad07072519882e9712fcdb0d42e50a332}\label{IMU__UartMsg_8c_ad07072519882e9712fcdb0d42e50a332}} 
+\index{IMU\_UartMsg.c@{IMU\_UartMsg.c}!Uart\_TransmitData@{Uart\_TransmitData}}
+\index{Uart\_TransmitData@{Uart\_TransmitData}!IMU\_UartMsg.c@{IMU\_UartMsg.c}}
+\doxysubsubsection{\texorpdfstring{Uart\_TransmitData()}{Uart\_TransmitData()}}
+{\footnotesize\ttfamily void Uart\+\_\+\+Transmit\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUartHandle__t}{Uart\+Handle\+\_\+t}} $\ast$}]{huart,  }\item[{uint8\+\_\+t $\ast$}]{p\+Txdata,  }\item[{uint16\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+read registers over Uart protocol 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hi2c} & pointer to Uart structure \\
+\hline
+{\em p\+Txdata} & pointer to data that has to be transmitted \\
+\hline
+{\em size} & number of bytes to be transmitted \\
+\hline
+\end{DoxyParams}

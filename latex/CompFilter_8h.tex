@@ -1,0 +1,80 @@
+\hypertarget{CompFilter_8h}{}\doxysection{Drivers/\+IMU/\+Inc/\+Comp\+Filter.h File Reference}
+\label{CompFilter_8h}\index{Drivers/IMU/Inc/CompFilter.h@{Drivers/IMU/Inc/CompFilter.h}}
+
+
+header file for complimentary filter  
+
+
+{\ttfamily \#include \char`\"{}MPUXX50.\+h\char`\"{}}\newline
+Include dependency graph for Comp\+Filter.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{CompFilter_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{CompFilter_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structFilter__t}{Filter\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{CompFilter_8h_a55ce5efccf67dddc8a9d7e6fd944b25f}{Filter\+\_\+\+Init}} (\mbox{\hyperlink{structFilter__t}{Filter\+\_\+t}} $\ast$filter, float deltaT, float alpha)
+\begin{DoxyCompactList}\small\item\em initialize filter params \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{CompFilter_8h_a44c8017b25c13f6a021ca341a1391f52}{Filter\+\_\+calc\+Attitude}} (\mbox{\hyperlink{structFilter__t}{Filter\+\_\+t}} $\ast$filter, \mbox{\hyperlink{structIMU__t}{IMU\+\_\+t}} $\ast$imu)
+\begin{DoxyCompactList}\small\item\em Calculate the attitude of the sensor in degrees using a complementary filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+header file for complimentary filter 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{CompFilter_8h_a44c8017b25c13f6a021ca341a1391f52}\label{CompFilter_8h_a44c8017b25c13f6a021ca341a1391f52}} 
+\index{CompFilter.h@{CompFilter.h}!Filter\_calcAttitude@{Filter\_calcAttitude}}
+\index{Filter\_calcAttitude@{Filter\_calcAttitude}!CompFilter.h@{CompFilter.h}}
+\doxysubsubsection{\texorpdfstring{Filter\_calcAttitude()}{Filter\_calcAttitude()}}
+{\footnotesize\ttfamily void Filter\+\_\+calc\+Attitude (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFilter__t}{Filter\+\_\+t}} $\ast$}]{filter,  }\item[{\mbox{\hyperlink{structIMU__t}{IMU\+\_\+t}} $\ast$}]{imu }\end{DoxyParamCaption})}
+
+
+
+Calculate the attitude of the sensor in degrees using a complementary filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filter} & pointer to filter structure \\
+\hline
+{\em imu} & Pointer to MPUxx50 structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{CompFilter_8h_a55ce5efccf67dddc8a9d7e6fd944b25f}\label{CompFilter_8h_a55ce5efccf67dddc8a9d7e6fd944b25f}} 
+\index{CompFilter.h@{CompFilter.h}!Filter\_Init@{Filter\_Init}}
+\index{Filter\_Init@{Filter\_Init}!CompFilter.h@{CompFilter.h}}
+\doxysubsubsection{\texorpdfstring{Filter\_Init()}{Filter\_Init()}}
+{\footnotesize\ttfamily void Filter\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFilter__t}{Filter\+\_\+t}} $\ast$}]{filter,  }\item[{float}]{deltaT,  }\item[{float}]{alpha }\end{DoxyParamCaption})}
+
+
+
+initialize filter params 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filter} & pointer to filter structure \\
+\hline
+{\em alpha} & Set alpha value for the complementary filter (typically 0.\+98). \\
+\hline
+{\em deltaT} & Set sampling rate in seconds determined by the timer interrupt. \\
+\hline
+\end{DoxyParams}

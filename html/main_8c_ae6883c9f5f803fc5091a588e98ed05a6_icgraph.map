@@ -1,0 +1,4 @@
+<map id="RCC_GetSysClockFreq" name="RCC_GetSysClockFreq">
+<area shape="rect" id="node1" title="Function to check for the current system core clock." alt="" coords="227,5,393,32"/>
+<area shape="rect" id="node2" href="$main_8h.html#a76c5b170e4c8d99cbbed6d42b730e0fe" title="Return the frequencies of different on chip clocks; System, AHB, APB1 and APB2 buses clocks." alt="" coords="5,5,179,32"/>
+</map>

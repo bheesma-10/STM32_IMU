@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="The application entry point." alt="" coords="5,132,60,159"/>
+<area shape="rect" id="node2" href="$main_8c.html#aec6c2e01969e7a086f7dc11853dad378" title="Initialize GPIO for Led." alt="" coords="132,5,212,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#a84df9a5887b8b8230cfe85d18e53900e" title="Initialize I2C for communication with IMU." alt="" coords="137,56,207,83"/>
+<area shape="rect" id="node4" href="$IMU__UartMsg_8h.html#a4e398c39b9c7044e9765930d8b3def10" title="initialize uart instance" alt="" coords="117,107,227,133"/>
+<area shape="rect" id="node5" href="$main_8c.html#a9a9ce29ac799cb62b7fbfd8040ed77b5" title="System Clock Configuration and Systick Interrupt generation." alt="" coords="108,157,236,184"/>
+<area shape="rect" id="node6" href="$main_8c.html#a92a70e2775796b1a7a6b49a983f570e3" title="Initialize Timer for IMU data sampling." alt="" coords="128,208,216,235"/>
+<area shape="rect" id="node7" href="$main_8c.html#abc85a00309536da2e4eddaa1d413bb57" title="Initialize Uart for logging messages." alt="" coords="129,259,215,285"/>
+</map>
