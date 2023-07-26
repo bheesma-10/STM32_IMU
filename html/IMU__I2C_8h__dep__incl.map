@@ -1,8 +1,0 @@
-<map id="Drivers/IMU/Inc/IMU_I2C.h" name="Drivers/IMU/Inc/IMU_I2C.h">
-<area shape="rect" id="node1" title="header file for i2c operations with IMU" alt="" coords="106,5,258,47"/>
-<area shape="rect" id="node2" href="$main_8c.html" title="Main program body." alt="" coords="5,259,129,285"/>
-<area shape="rect" id="node3" href="$MPUXX50_8h.html" title="header file for MPUxx50 operations" alt="" coords="81,102,283,129"/>
-<area shape="rect" id="node6" href="$IMU__I2C_8c.html" title="source file for I2C operation handling" alt="" coords="308,95,461,136"/>
-<area shape="rect" id="node4" href="$CompFilter_8h.html" title="header file for complimentary filter" alt="" coords="105,184,313,211"/>
-<area shape="rect" id="node5" href="$CompFilter_8c.html" title="source file for complimentary filter" alt="" coords="199,259,407,285"/>
-</map>
