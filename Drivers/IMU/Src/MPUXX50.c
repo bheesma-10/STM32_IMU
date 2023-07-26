@@ -52,7 +52,7 @@ uint8_t MPU_begin(I2CHandle_t *hi2c, IMU_t *imu, uint8_t addr, uint8_t aScale, u
 */
 void MPU_writeAccFullScaleRange(I2CHandle_t *hi2c, IMU_t *imu, uint8_t aScale)
 {
-	//clear scale value
+	//clear previous scale value
 	uint8_t data = 0;
 	I2C_Read_Reg(hi2c, REG_ACCEL_CONFIG, &data, 1,100);
 	data = data & ~(0x3<<3U);
@@ -96,7 +96,7 @@ void MPU_writeAccFullScaleRange(I2CHandle_t *hi2c, IMU_t *imu, uint8_t aScale)
 */
 void MPU_writeGyroFullScaleRange(I2CHandle_t *hi2c, IMU_t *imu, uint8_t gScale)
 {
-	//clear scale value
+	//clear previous scale value
 	uint8_t data = 0;
 	I2C_Read_Reg(hi2c, REG_GYRO_CONFIG, &data, 1,100);
 	data = data & ~(0x3<<3U);
